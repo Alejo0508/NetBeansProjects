@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+      <title>Formulario</title>
+      <meta charset="UTF-8">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+
+      <header>
+
+
+
+      </header>
+
+      <main>
+         <br>
+
+         <div class="container">
+
+            <div class="row">
+                             
+               <h2>Formulario de Ejemplo en JSP</h2>
+
+               <form action="agregarUsuario.jsp" method="POST">
+                  <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                     <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                     <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                     <label for="exampleInputEmail1" class="form-label">Direccion de email</label>
+                     <input type="email" class="form-control" id="email" name="correo" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                     <input type="password" class="form-control" id="clave" name="clave" >
+                  </div>
+                  <button type="submit" name="btnguardar" class="btn btn-success" title="Guardar Usuario">Guardar <i class="fa fa-save"></i></button>
+                  <a href="index.jsp" class="btn btn-danger" >Cancelar <i class="fa fa-ban"></i></a>
+               </form>
+
+            </div>
+
+         </div>
+
+
+
+
+
+
+      </main>
+
+      <footer>
+
+
+
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   </body>
+</html>
