@@ -11,10 +11,11 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Usuarios</title>
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Usuarios</title>
+
    </head>
    <body>
 
@@ -35,8 +36,8 @@
                   <th scope="col">Email</th>
                   <th scope="col" colspan="2">Acciones</th>
                </tr>
-               
-              
+
+
 
             </thead>
 
@@ -47,7 +48,7 @@
                    clic derecho en Libraries y agregar librería de MySql JDBC Driver
                    */
                   request.setCharacterEncoding("UTF-8");//acentos desde mysql
-                  
+
                   try {
                      //Conexión a la base de datos de MySql
                      //Connection cnx = null;
@@ -62,21 +63,21 @@
                       */
                      st = cnx.createStatement();
                      rs = st.executeQuery("Select * From usuarios");
-                     
+
                      while (rs.next()) {
-                        
+
                %>
-               
+
                <tr>
 
                   <th scope="row"><%= rs.getString(1)%></th>
 
                   <td><%= rs.getString(2)%></td>
                   <td><%= rs.getString(4)%></td>
-                  
+
 
                   <td><a href="editarUsuario.jsp?usuario=<%= rs.getString("usuario")%>&nombre=<%= rs.getString("nombre")%>&clave=<%= rs.getString("clave")%>&correo=<%= rs.getString("correo")%>" class="btn btn-warning"><i class="fa fa-pencil"></i></a></td>
-                  
+
                   <td><a href="borrarUsuario.jsp?usuario=<%= rs.getString(1)%> " class="btn btn-danger" onClick = "return confirm('¿Está seguro de que desea eliminar este usuario?');"><i class="fa fa-trash"></i></a></td>
                </tr>
 
@@ -89,13 +90,13 @@
                %>    
 
             </tbody>
-            
+
          </table>
-               
-             
-               
+
+
+
       </div>
-               
+
       <script src="https://kit.fontawesome.com/e4f0235d6c.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

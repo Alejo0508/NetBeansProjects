@@ -18,7 +18,7 @@
 <%
      String user = "root";
      String password = "";
-     String url = "jdbc:mysql://localhost:3306/usuariojsp";
+     String url = "jdbc:mysql://localhost:3310/usuariojsp";
      
 
     Class.forName("com.mysql.jdbc.Driver");

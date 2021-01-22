@@ -27,6 +27,7 @@
       %>
       <div class = "container">
          <h3>Edición de Usuario</h3>
+         
          <form action="editarUsuario.jsp" method="post">
             <div class="mb-3">
                <label for="nombre" class="form-label">Nombre</label>
@@ -55,6 +56,7 @@
             <input type="hidden" name="usuario" value="<%= usuario%>">
          </form>
       </div>  
+         
       <%
          if (request.getParameter("btnguardar") != null) {
             try {
@@ -66,8 +68,7 @@
                //ResultSet rs = null;
                st = cnx.createStatement();
                
-               st.executeUpdate("update usuarios set nombre = '" + nombre + "', usuario = '" + usuario + "', clave = '" + clave + "', correo = '" + correo + "'"
-                       + " where usuario = '" + usuario + "';");
+               st.executeUpdate("update usuarios set nombre = '" + nombre + "', usuario = '" + usuario + "', clave = '" + clave + "', correo = '" + correo + "'" + " where usuario = '" + usuario + "';");
                
                //redireccionarl al archivo agregarusuario.html
                request.getRequestDispatcher("index.jsp").forward(request, response);
@@ -76,6 +77,7 @@
             }
          }
       %>
+      
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
    </body>

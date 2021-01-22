@@ -1,0 +1,45 @@
+.tamañocarrusel
+{
+   height: 400px;
+   width:  100%;
+   margin-top: 40px;
+}
+
+.margentabla
+{
+   margin-top: 50px;
+}
+
+.textotabla
+{
+   text-align: center;
+}
+.textotabla2
+{
+   text-align: left;
+}
+
+.margenformulario
+{
+   margin-top: 70px;
+}
+
+.margelprecio
+{
+   margin-top: 24px;
+}
+
+.margelprecio2
+{
+   margin-top: 24px;
+}
+
+.justificado
+{
+   justify-content: center;
+}
+
+.marginboton
+{
+  margin-left: 20px;
+}

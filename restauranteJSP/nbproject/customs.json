@@ -1,0 +1,10 @@
+{
+   "elements": {
+      "radiogroup": {}
+   },
+   "attributes": {
+      "value": {
+         "context": "select"
+      }
+   }
+}
